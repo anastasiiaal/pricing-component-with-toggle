@@ -34,6 +34,26 @@ ol, ul {
 }
 
 /* ______________________________________________ */
+.waves-wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.wave--top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.wave--bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -42,7 +62,73 @@ ol, ul {
   color: hsl(228deg, 45%, 44%);
 }
 
-/* some css rules will be placed here */
 body {
-  background-color: lavender;
+  position: relative;
+  background-color: #F7F7FF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 30px;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  color: #4A4D60;
+}
+.card.active {
+  background: linear-gradient(100deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  padding: 54px 30px;
+  color: #FFFFFD;
+}
+.card h3 {
+  font-size: 18px;
+}
+.card__price {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 42px 0;
+}
+.card__price span {
+  font-size: 20px;
+  margin-right: 7px;
+}
+.card p {
+  border-top: 1px solid #DADADA;
+  padding: 20px;
+}
+.card p.last {
+  border-bottom: 1px solid #DADADA;
+}
+.card .button {
+  padding: 17px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  background: linear-gradient(100deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  color: #FFFFFD;
+  border-radius: 4px;
+}
+.card .button.active {
+  background: #FFFFFD;
+  color: #7074E0;
 }/*# sourceMappingURL=main.css.map */
