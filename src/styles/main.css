@@ -131,6 +131,7 @@ main {
   border-radius: 8px;
   text-align: center;
   color: #4A4D60;
+  box-sizing: border-box;
   box-shadow: 0px 15px 20px rgba(108, 112, 222, 0.1);
 }
 .card.active {
@@ -185,4 +186,45 @@ main {
 .card .button.active:hover {
   color: #FFFFFD;
   background: transparent;
+}
+
+/* _____________ media queries */
+/*1440-1100*/
+@media screen and (max-width: 1100px) {
+  .card {
+    width: 320px;
+  }
+}
+/*1100-992*/
+@media screen and (max-width: 992px) {
+  .card-wrapper {
+    flex-direction: column;
+    gap: 33px;
+  }
+  .card {
+    width: 350px;
+    padding: 35px 30px;
+  }
+  .card.active {
+    padding: 35px 30px;
+  }
+}
+/*991-450*/
+@media screen and (max-width: 450px) {
+  .card {
+    width: 320px;
+  }
+}
+/* < 320*/
+@media screen and (max-width: 319px) {
+  .card {
+    width: 100%;
+  }
+  .card__price {
+    font-size: 50px;
+    padding: 30px 0;
+  }
+  .card__price span {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
