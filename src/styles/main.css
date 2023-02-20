@@ -59,6 +59,7 @@ ol, ul {
   text-align: center;
   font-weight: 400;
   margin-top: 4rem;
+  padding-bottom: 0.5rem;
 }
 .attribution a {
   color: hsl(228deg, 45%, 44%);
@@ -101,7 +102,7 @@ main {
   width: 56px;
   background: linear-gradient(100deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
   margin: 0 25px;
-  border-radius: 15px;
+  border-radius: 16px;
   position: relative;
   cursor: pointer;
 }
@@ -116,6 +117,10 @@ main {
   position: absolute;
   top: 4px;
   left: 4px;
+  transition: all 0.4s ease-in-out;
+}
+.toggle-wrapper .toggle .toggle__ball.active {
+  transform: translateX(23px);
 }
 
 .card-wrapper {
@@ -166,10 +171,10 @@ main {
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 0.1em;
-  background: linear-gradient(100deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
-  color: #FFFFFD;
   border-radius: 4px;
   cursor: pointer;
+  color: #FFFFFD;
+  background: linear-gradient(100deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
   border: 1px solid #FFFFFD;
   transition: all 0.3s ease-in-out;
 }
@@ -179,8 +184,8 @@ main {
   border: 1px solid #7074E0;
 }
 .card .button.active {
-  background: #FFFFFD;
   color: #7074E0;
+  background: #FFFFFD;
   border: 1px solid #FFFFFD;
 }
 .card .button.active:hover {

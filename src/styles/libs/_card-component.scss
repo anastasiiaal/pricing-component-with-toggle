@@ -54,10 +54,10 @@
         text-transform: uppercase;
         font-size: 13px;
         letter-spacing: 0.1em;
-        background: $gradient;
-        color: $white;
         border-radius: 4px;
         cursor: pointer;
+        color: $white;
+        background: $gradient;
         border: 1px solid $white;
         transition: all .3s ease-in-out;
 
@@ -68,8 +68,8 @@
         }
 
         &.active {
-            background: $white;
             color: $violet;
+            background: $white;
             border: 1px solid $white;
 
             &:hover {

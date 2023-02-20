@@ -22,7 +22,7 @@
             width: 56px;
             background: $gradient;
             margin: 0 25px;
-            border-radius: 15px;
+            border-radius: 16px;
             position: relative;
             cursor: pointer;
 
@@ -39,6 +39,11 @@
             position: absolute;
             top: 4px;
             left: 4px;
+            transition: all .4s ease-in-out;
+        }
+
+        .toggle__ball.active {
+            transform: translateX(23px);
         }
     }
 }
