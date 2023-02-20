@@ -12,7 +12,7 @@ export default function Toggle () {
             <div className="toggle">
                 <p className="toggle__p">Annually</p>
                 <div className="toggle__box" onClick={onToggle}>
-                    <div className="toggle__ball" id="toggle__ball"></div>
+                    <div className="toggle__ball active" id="toggle__ball"></div>
                 </div>
                 <p className="toggle__p">Monthly</p>
             </div>
