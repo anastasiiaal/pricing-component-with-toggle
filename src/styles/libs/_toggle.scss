@@ -1,0 +1,44 @@
+.toggle-wrapper {
+    
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        color: $grey;
+    }
+
+    .toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 47px auto 65px;
+
+        &__p {
+            color: $grey;
+            opacity: 70%;
+        }
+
+        &__box {
+            height: 32px;
+            width: 56px;
+            background: $gradient;
+            margin: 0 25px;
+            border-radius: 15px;
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+                background: $gradient-light;
+            }
+        }
+
+        &__ball {
+            height: 24px;
+            width: 24px;
+            background-color: $white;
+            border-radius: 12px;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+        }
+    }
+}

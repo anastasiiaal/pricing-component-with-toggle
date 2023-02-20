@@ -1,7 +1,6 @@
 import React from "react"
 
 export default function Card (props) {
-    console.log(props);
     return (
         <div className={props.isActive ? "card active" : "card"}>
             <h3>{props.title}</h3>

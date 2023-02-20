@@ -1,8 +1,9 @@
 import React from "react"
 
-import Attribution from "./components/Attribution"
 import BgWaves from "./components/BgWaves"
+import Toggle from "./components/Toggle"
 import Card from "./components/Card"
+import Attribution from "./components/Attribution"
 
 import cards from "../cards.js"
 
@@ -18,6 +19,7 @@ function App() {
     return (
         <main>
             <BgWaves />
+            <Toggle />
             <div className="card-wrapper">
                 {cardsArray}
             </div>
