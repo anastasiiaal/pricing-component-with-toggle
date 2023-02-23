@@ -152,7 +152,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 42px 0;
+  padding: 20px 0;
 }
 .card__price span {
   font-size: 40px;
@@ -160,7 +160,8 @@ main {
 }
 .card p {
   border-top: 1px solid rgba(218, 218, 218, 0.5019607843);
-  padding: 20px;
+  padding: 18px;
+  letter-spacing: 0.04em;
 }
 .card p.last {
   border-bottom: 1px solid rgba(218, 218, 218, 0.5019607843);

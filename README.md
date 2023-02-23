@@ -30,7 +30,7 @@ Here is the result of my code:
 
 ### Links
 
-- Live Site URL: [Coming soon..](https://your-live-site-url.com)
+- Live Site URL: [Click here](https://pricing-component-with-toggle-ten-theta.vercel.app/)
 - Solution code URL: [This GitHub repo](https://github.com/anastasiiaal/pricing-component-with-toggle)
 
 ## My process
@@ -56,9 +56,7 @@ Having my index.html file look like that:
   <script type="module" src="/src/index.jsx"></script>
 </body>
 ```
-was quite unusual and exciting.
-
-Making these lines 
+was quite unusual and exciting. And making these lines 
 ```js
 function App() {
   return (
@@ -69,6 +67,9 @@ function App() {
     </main>
   )
 }
+```
+```js
+ReactDOM.createRoot(document.getElementById('root')).render(<App />)
 ```
 generate the whole page content was thrilling!
 
