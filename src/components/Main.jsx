@@ -28,7 +28,7 @@ export default function Main() {
                 <h2>Our pricing</h2>
                 <div className="toggle">
                     <p className="toggle__p">Annually</p>
-                    <div className="toggle__box" onClick={onToggle}>
+                    <div className="toggle__box" tabindex="0" onKeyDown={onToggle} onClick={onToggle}>
                         <div className={isToggled ? "toggle__ball active" : "toggle__ball"} id="toggle__ball"></div>
                     </div>
                     <p className="toggle__p">Monthly</p>
