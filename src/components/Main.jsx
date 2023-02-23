@@ -5,7 +5,7 @@ import cards from "/cards.js";
 
 export default function Main() {
 
-    const [isToggled, setIsToggled] = React.useState(false);
+    const [isToggled, setIsToggled] = React.useState(true);
 
     function onToggle () {
         setIsToggled(prevState => !prevState)
@@ -25,10 +25,10 @@ export default function Main() {
         <div className="container">
 
             <div className="toggle-wrapper">
-                <h2>Our pricing</h2>
-                <div className="toggle">
+                <h2>Our Pricing</h2>
+                <div className="toggle" onClick={onToggle}>
                     <p className="toggle__p">Annually</p>
-                    <div className="toggle__box" tabindex="0" onKeyDown={onToggle} onClick={onToggle}>
+                    <div className="toggle__box" tabIndex="0" onKeyDown={onToggle}>
                         <div className={isToggled ? "toggle__ball active" : "toggle__ball"} id="toggle__ball"></div>
                     </div>
                     <p className="toggle__p">Monthly</p>

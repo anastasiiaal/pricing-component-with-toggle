@@ -11,6 +11,7 @@
         justify-content: center;
         align-items: center;
         margin: 47px auto 65px;
+        cursor: pointer;
 
         &__p {
             color: $grey;
@@ -24,7 +25,6 @@
             margin: 0 25px;
             border-radius: 16px;
             position: relative;
-            cursor: pointer;
 
             &:hover {
                 background: $gradient-light;
