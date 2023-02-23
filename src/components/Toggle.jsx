@@ -1,9 +1,12 @@
+// this component is no longer needed for now
 import React from "react"
 
 export default function Toggle () {
 
+    const [isToggled, setIsToggled] = React.useState(false);
+
     function onToggle () {
-        document.getElementById("toggle__ball").classList.toggle("active");
+        setIsToggled(prevState => !prevState)
     }
 
     return (
@@ -12,7 +15,7 @@ export default function Toggle () {
             <div className="toggle">
                 <p className="toggle__p">Annually</p>
                 <div className="toggle__box" onClick={onToggle}>
-                    <div className="toggle__ball active" id="toggle__ball"></div>
+                    <div className={isToggled ? "toggle__ball active" : "toggle__ball"} id="toggle__ball"></div>
                 </div>
                 <p className="toggle__p">Monthly</p>
             </div>

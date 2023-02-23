@@ -1,11 +1,10 @@
 import React from "react"
 
-
 export default function Card (props) {
 
     let price = props.pricePerYear;
     
-    if (document.getElementById("toggle__ball") && document.getElementById("toggle__ball").classList.contains("active")) {
+    if (props.state) {
         price = Math.floor(price*10)/100
     }
 
