@@ -2,11 +2,12 @@
     font-size: 11px;
     text-align: center;
     font-weight: 400;
+    color: $dark;
 
     margin-top: 3rem;
     padding-bottom: 0.5rem;
 
     a {
-        color: hsl(228, 45%, 44%);
+        color: $violet;
     }
 }

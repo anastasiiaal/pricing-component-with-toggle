@@ -58,11 +58,12 @@ ol, ul {
   font-size: 11px;
   text-align: center;
   font-weight: 400;
+  color: #4A4D60;
   margin-top: 3rem;
   padding-bottom: 0.5rem;
 }
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: #7074E0;
 }
 
 body {
@@ -101,13 +102,13 @@ main {
 .toggle-wrapper .toggle__box {
   height: 32px;
   width: 56px;
-  background: linear-gradient(100deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  background: linear-gradient(100deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   margin: 0 25px;
   border-radius: 16px;
   position: relative;
 }
 .toggle-wrapper .toggle__box:hover {
-  background: linear-gradient(100deg, hsla(236deg, 72%, 79%, 0.75), hsla(237deg, 63%, 64%, 0.75));
+  background: linear-gradient(100deg, hsla(236, 72%, 79%, 0.75), hsla(237, 63%, 64%, 0.75));
 }
 .toggle-wrapper .toggle__ball {
   height: 24px;
@@ -140,7 +141,7 @@ main {
   box-shadow: 0px 15px 20px rgba(108, 112, 222, 0.1);
 }
 .card.active {
-  background: linear-gradient(100deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  background: linear-gradient(100deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   padding: 54px 30px;
   color: #FFFFFD;
 }
@@ -175,7 +176,7 @@ main {
   border-radius: 6px;
   cursor: pointer;
   color: #FFFFFD;
-  background: linear-gradient(100deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
+  background: linear-gradient(100deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   border: 1px solid #FFFFFD;
   transition: all 0.3s ease-in-out;
 }
@@ -219,6 +220,12 @@ main {
 @media screen and (max-width: 450px) {
   .card {
     width: 320px;
+  }
+  .wave--top {
+    transform: scale(80%) translate(20%, -20%);
+  }
+  .wave--bottom {
+    transform: scale(80%) translate(-20%, 20%);
   }
 }
 /* < 320*/

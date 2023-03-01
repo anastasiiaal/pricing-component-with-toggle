@@ -30,6 +30,16 @@
     .card {
         width: 320px;
     }
+
+    .wave {
+        &--top {
+            transform: scale(80%) translate(20%, -20%);
+        }
+    
+        &--bottom {
+            transform: scale(80%) translate(-20%, 20%);
+        }
+    }
 }
 
 /* < 320*/

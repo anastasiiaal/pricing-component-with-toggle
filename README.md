@@ -11,7 +11,7 @@ This is my solution to the [Pricing component with toggle challenge on Frontend 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-- [Thanks](#thanks-for-your-visit)
+- [Thanks](#thanks-for-your-visit-)
 
 ## Overview
 
@@ -40,8 +40,8 @@ Here is the result of my code:
 - Semantic HTML5 markup
 - CSS (Flexbox, CSS Grid, etc.)
 - [Sassy CSS](https://sass-lang.com/)
-- NPM 
-- [React](https://reactjs.org/) JS library
+- npm
+- [React.js](https://reactjs.org/)
 - [Vite.js](https://vitejs.dev/)
 
 ### What I learned
@@ -56,9 +56,11 @@ Having my index.html file look like that:
   <script type="module" src="/src/index.jsx"></script>
 </body>
 ```
-was quite unusual and exciting. And making these lines 
+was quite unusual and exciting. 
+
+And making these lines 
 ```js
-function App() {
+export default function App() {
   return (
     <main>
       <BgWaves />
