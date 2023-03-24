@@ -39,6 +39,3 @@ dart-sass
 *.njsproj
 *.sln
 *.sw?
-
-*.css
-*.css.map

@@ -1,0 +1,243 @@
+/* ______________________________________________ */
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/* ______________________________________________ */
+.waves-wrapper {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.wave--top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.wave--bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-weight: 400;
+  color: #4A4D60;
+  margin-top: 3rem;
+  padding-bottom: 0.5rem;
+}
+.attribution a {
+  color: #7074E0;
+}
+
+body {
+  position: relative;
+  background-color: #F7F7FF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+main {
+  padding-top: 6vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.toggle-wrapper h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #6D718E;
+}
+.toggle-wrapper .toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 47px auto 65px;
+  cursor: pointer;
+}
+.toggle-wrapper .toggle__p {
+  color: #6D718E;
+  opacity: 70%;
+}
+.toggle-wrapper .toggle__box {
+  height: 32px;
+  width: 56px;
+  background: linear-gradient(100deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  margin: 0 25px;
+  border-radius: 16px;
+  position: relative;
+}
+.toggle-wrapper .toggle__box:hover {
+  background: linear-gradient(100deg, hsla(236, 72%, 79%, 0.75), hsla(237, 63%, 64%, 0.75));
+}
+.toggle-wrapper .toggle__ball {
+  height: 24px;
+  width: 24px;
+  background-color: #FFFFFD;
+  border-radius: 12px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: all 0.4s ease-in-out;
+}
+.toggle-wrapper .toggle .toggle__ball.active {
+  transform: translateX(23px);
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 30px;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  color: #4A4D60;
+  box-sizing: border-box;
+  box-shadow: 0px 15px 20px rgba(108, 112, 222, 0.1);
+}
+.card.active {
+  background: linear-gradient(100deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  padding: 54px 30px;
+  color: #FFFFFD;
+}
+.card h3 {
+  font-size: 18px;
+}
+.card__price {
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.card__price span {
+  font-size: 40px;
+  margin-right: 7px;
+}
+.card p {
+  border-top: 1px solid rgba(218, 218, 218, 0.5019607843);
+  padding: 18px;
+  letter-spacing: 0.04em;
+}
+.card p.last {
+  border-bottom: 1px solid rgba(218, 218, 218, 0.5019607843);
+}
+.card .button {
+  padding: 14px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #FFFFFD;
+  background: linear-gradient(100deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border: 1px solid #FFFFFD;
+  transition: all 0.3s ease-in-out;
+}
+.card .button:hover {
+  color: #7074E0;
+  background: transparent;
+  border: 1px solid #7074E0;
+}
+.card .button.active {
+  color: #7074E0;
+  background: #FFFFFD;
+  border: 1px solid #FFFFFD;
+}
+.card .button.active:hover {
+  color: #FFFFFD;
+  background: transparent;
+}
+
+/* _____________ media queries */
+/*1440-1100*/
+@media screen and (max-width: 1100px) {
+  .card {
+    width: 320px;
+  }
+}
+/*1100-992*/
+@media screen and (max-width: 992px) {
+  .card-wrapper {
+    flex-direction: column;
+    gap: 33px;
+  }
+  .card {
+    width: 350px;
+    padding: 35px 30px;
+  }
+  .card.active {
+    padding: 35px 30px;
+  }
+}
+/*991-450*/
+@media screen and (max-width: 450px) {
+  .card {
+    width: 320px;
+  }
+  .wave--top {
+    transform: scale(80%) translate(20%, -20%);
+  }
+  .wave--bottom {
+    transform: scale(80%) translate(-20%, 20%);
+  }
+}
+/* < 320*/
+@media screen and (max-width: 319px) {
+  .card {
+    width: 100%;
+  }
+  .card__price {
+    font-size: 50px;
+    padding: 30px 0;
+  }
+  .card__price span {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=main.css.map */
